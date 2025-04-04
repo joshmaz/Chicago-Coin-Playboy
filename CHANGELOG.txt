@@ -1,0 +1,29 @@
+
+Config 1.7 - 04/04/2025
+
+Reset trigger 7 (tilt primary) to clear Polyphonic. Tilting should stop all music and other sounds.
+Confirmed trigger 8 (tilt secondary) was also not polyphonic. It was correct.
+Cleared re-trigger from 7 & 8 to proactively address bouncing
+
+Adjusted the music track (1 & 2) volumes from -7 to -10 to better balance the music and the callouts
+
+Added WAV Trigger Configuration markdown document.
+
+Removed erroneus volume -15 from config file header by re-adjusting system volume to 0
+
+
+Config 1.6 - 04/01/2025
+
+Changed the kickout and rollover triggers to not re-trigger. Triggers 3, 4, 5, 6
+They were bouncing on the solonoid monitor circuit that I built.
+
+Changed the file range for the triggers 1, 2, 3, 4 to the full scope, not just populated number of files
+
+
+Config 1.5 - 03/19/2025
+
+Changes to accomoate my optocoupler prototype, which should go low when the solonoid fires.
+Updated triggers 3,4 (kickouts) and 5,6 (rollovers) to Active hardware interface and cleared the invert flag.
+
+Change to test if WAVtrigger finds only available track numbers.
+Updated trigger 2 (alt music tracks) to be inclusive from 201-299.
