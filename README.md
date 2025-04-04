@@ -1,33 +1,12 @@
-This WAV Trigger configuration is being composed for:
-
-1947 Chicago Coin Play Boy pinball machine
-Music theme should be upbeat jazzy 40's big-band
-
-Configuration v1.5
-
-Physical switch mapping (16 avail):
-
-On-board test button - Always track 001
-01 - New game (Reset bar) - Random music track
-02 - New game alternate* - Random alternate track
-03 - Kickout holes - Play random kickout track
-04 - Kickout holes altnerate*
-05 - Rollovers - Play random rollover track
-06 - Rollovers alternate*
-07 - Tilt relay - Play random tilt track, non-polyphonic
-08 - Tilt relay alternate*, non-polyphonic
-
-09 - Information button - Play informational voice track
-10 - Quiet button - Stop music tracks
-11 - 1K score relay
-12 - 10K score relay
-13-16 - Undefined
-
 # WAV Trigger Configuration - 1947 Chicago Coin Play Boy
 
 ## Overview
+
 Configuration for a 1947 Chicago Coin Play Boy pinball machine with 1940s big-band jazz theme.
-Version 1.5
+
+This project uses a wave trigger board to add digital sound and musicantique electromechanical pinball machine.
+
+The project also includesswitches to change the configuration of the sounds, toggling between a primary and secondary set of music, kick out sounds, rollover sounds, and tilt event sounds.
 
 ## Physical Switch Mapping (16 available)
 
@@ -51,6 +30,7 @@ Version 1.5
 ## Notes & Considerations
 
 ### Toggle Configuration
+
 - Pair of 2PDT toggles create primary/alternate versions of music and sounds
 - Primary/alternate New game triggers are non-polyphonic (one song at a time)
 - Primary/alternate Tilt triggers are non-polyphonic (all tracks halt on tilt)
@@ -67,6 +47,7 @@ Triggers for these acelectronic interfaces I'm using:
 - Re-trigger cleared (to help with de-bouncing)
 
 ### Future Ideas
+
 - Extend Quiet button to include informational tracks
 - Consider removing sample sounds from final product
 - Implement three-position DPDT for bell settings:
@@ -97,7 +78,6 @@ Triggers for these acelectronic interfaces I'm using:
 
 ## Current WAV Trigger Configuration
 
-
 Considerations and ideas:
 Make the Quiet button include the informational tracks
 Consider purging the sample sounds from the final product
@@ -105,8 +85,7 @@ Use a three-position DPDT for bell settings... mechanical bell on, no bell (off)
 Use an optocoupler to gain visibility to the game timer's status. 
 Game state opto-coupler - Play power up, Game state opto-coupler inverted - Play power down sound
 
-Note*: 
-A pair of 2PDT toggles are used to create primary and alternate versions of music and sounds.
+Note*: A pair of 2PDT toggles are used to create primary and alternate versions of music and sounds.
 The pri/alt New game (start music) triggers are non-polyphonic so that only one song at a time is playing. 
 The pri/alt Tilt triggers are non-polyphonic so that all tracks halt when a tilt occurs.
 
