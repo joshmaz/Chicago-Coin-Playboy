@@ -39,7 +39,7 @@ The project also includesswitches to change the configuration of the sounds, tog
 
 Made lots of progress using optocouplers and a custom cicuit to signal the WAV Trigger.
 The signal line is usually high and is pulled low when the opto closes.
-Triggers for these acelectronic interfaces I'm using:
+Triggers for these electronic interfaces I'm using:
 
 - Active interface
 - Edge trigger
@@ -78,36 +78,9 @@ Triggers for these acelectronic interfaces I'm using:
 
 ## Current WAV Trigger Configuration
 
-Considerations and ideas:
-Make the Quiet button include the informational tracks
-Consider purging the sample sounds from the final product
-Use a three-position DPDT for bell settings... mechanical bell on, no bell (off), digital bell on
-Use an optocoupler to gain visibility to the game timer's status. 
-Game state opto-coupler - Play power up, Game state opto-coupler inverted - Play power down sound
-
-Note*: A pair of 2PDT toggles are used to create primary and alternate versions of music and sounds.
-The pri/alt New game (start music) triggers are non-polyphonic so that only one song at a time is playing. 
-The pri/alt Tilt triggers are non-polyphonic so that all tracks halt when a tilt occurs.
-
-WAV file naming guide:
-
-001 - Self-test / welcome track (i.e. 001_Digital_Sounds_Loaded.wav)
-009 - Information track
-011 - Score wheel, small
-012 - Score wheel, large
-020-029 - Kickout hole sounds (Primary)
-030-039 - Kickout hole sounds (Alternate)
-040-049 - Rollover lane sounds (Primary)
-050-059 - Rollover lane sounds (Alternate)
-060-069 - Tilt relay sounds (Primary)
-070-079 - Tilt relay sounds (Alternate)
-100-199 - Music tracks (Primary)
-200-299 - Music tracks (Alternate)
-001-018 - Corresponding numbers (sample files, left for troubleshooting undefined triggers)
-
-
 The last wavtrigr.ini file I copied into this file:
---
+
+```
 #TRIG 01, 1, 0, 1, 1, 0, 4, -10, 101, 199
 #TRIG 02, 1, 0, 1, 1, 0, 4, -10, 201, 299
 #TRIG 03, 2, 0, 1, 0, 1, 4, 0, 21, 29
@@ -126,3 +99,4 @@ for use with the WAV Trigger firmware. It is only required if
 you wish to over-ride default settings. You may add your own
 comments below this line -->
 Config 1.7
+```
