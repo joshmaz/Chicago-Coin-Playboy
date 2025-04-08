@@ -179,11 +179,11 @@ Documenation of each trigger's settings.
 ![Screenshot of WTConfig settings for Trigger 10](images/trigger-10.png)
 
 - Hardware Interface: Contact Closure
-- Type: Level Triggered
+- Type: Edge
 - Function: Stop
-- Track Range: 100-299
+- Track Range: 1-4096
 - Volume: 0 dB
-- Invert: Yes
+- Invert: No
 - Re-Trigger: No
 - Lock: No
 - Polyphonic: No

@@ -1,5 +1,14 @@
 # WAV Trigger Configuration Changelog
 
+## [1.9] - 2025-04-08
+
+### Changed
+- Updated trigger 10 (Shhh) to stop the full range of files (1-4096), reset edge trigger and cleared invertion to match current physical switch.
+- Fought with a bug in the WTConfig software in where the UI was displaying extra text (a pair of '500's) in the ini file view. Worked through updating each trigger back to the ini file until the extra data was at the top, then manually removed the extra lines and resaved the file.
+
+### Added
+- New Presentation markdown file for speaking to an overview of the project.
+
 ## [1.8] - 2025-04-05
 
 ### Changed
