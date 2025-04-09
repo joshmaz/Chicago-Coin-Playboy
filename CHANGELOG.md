@@ -1,5 +1,15 @@
 # WAV Trigger Configuration Changelog
 
+## [1.10]
+
+### Changed
+- Updated triggers 11 & 12 (chimes) to use Active interface
+- Moved sample files out of workflow and into a subfolder that does not get copied to the sd card. Updated .gitignore
+
+### Fixed
+- Restored missing trigger 10 setting in ini file. Sometimes that config app really horks the ini file
+
+
 ## [1.9] - 2025-04-08
 
 ### Changed
